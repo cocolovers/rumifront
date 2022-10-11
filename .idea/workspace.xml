@@ -4,26 +4,73 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54ddabf4-15cd-4ec4-9f83-454114c2da19" name="Changes" comment="" />
+    <list default="true" id="54ddabf4-15cd-4ec4-9f83-454114c2da19" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/components/LoginForm.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/config/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/containers/Login.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/functions/uniqueId.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/functions/webSocketConnection.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/interfaces/IAuth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/interfaces/IUser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/mappers/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/mappers/response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/store/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/routes/+layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/routes/game/+layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/routes/game/+layout.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/routes/game/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rumikub.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="dj7j56va" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2Ftx9iZf2SkVm1vdIgzbZGUWQTt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/IdeaProjects/rumikub/api&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Usuario\\IdeaProjects\\rumikub\\front\\node_modules\\typescript\\lib&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\IdeaProjects\rumikub\api" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,8 +79,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665325033958</updated>
+      <workItem from="1665325035204" duration="7867000" />
+      <workItem from="1665382080143" duration="6000" />
+      <workItem from="1665423986180" duration="928000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
