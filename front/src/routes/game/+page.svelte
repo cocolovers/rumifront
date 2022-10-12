@@ -1,5 +1,12 @@
-<script>
-    import {authStore} from "$lib/store/auth";
+<script lang='ts'>
+	import Page from '$lib/components/Page.svelte';
+	import MenuHome from '$lib/components/MenuHome.svelte';
 </script>
 
-Bienvenido {$authStore.name}({$authStore.id})
+<svelte:head>
+	<title>Game</title>
+</svelte:head>
+
+<Page>
+	<MenuHome />
+</Page>
