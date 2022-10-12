@@ -1,4 +1,3 @@
-
 export interface IBase {
-    tag: string;
+	tag: string;
 }

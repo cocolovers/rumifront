@@ -1,12 +1,12 @@
 <script>
-    import Login from "$lib/containers/Login.svelte";
+	import Login from '$lib/containers/Login.svelte';
 </script>
 
 <div>
-  <Login/>
+	<Login />
 </div>
 
-<style lang="scss">
+<style lang='scss'>
   div {
     margin: 40px;
   }

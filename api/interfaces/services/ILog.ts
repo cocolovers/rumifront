@@ -1,6 +1,5 @@
-import {IBase} from "./IBase";
+import { IBase } from './IBase';
 
 export interface Ilog extends IBase {
-    error: (message: string) => void;
-
+	error: (message: string) => void;
 }

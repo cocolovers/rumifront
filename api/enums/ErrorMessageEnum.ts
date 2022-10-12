@@ -1,3 +1,1 @@
-export enum ErrorMessageEnum {
-
-}
+export enum ErrorMessageEnum {}
