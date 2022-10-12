@@ -28,6 +28,7 @@ io.on('connection', function (socket: any) {
     }
 
     socket.user = {name, id};
+
     users[name] = {
       socket,
       ...socket.user
