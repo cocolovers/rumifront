@@ -1,6 +1,9 @@
+import {IUser} from '../front/src/lib/interfaces/IUser'
+import config from './config.json'
+
 const app = require('express')();
 const http = require('http').Server(app);
-import {IUser} from '../front/src/lib/interfaces/IUser'
+const cors = require("cors")
 
 const io = require('socket.io')(http, {
   cors: {
@@ -8,7 +11,6 @@ const io = require('socket.io')(http, {
     methods: ["GET", "POST"]
   }
 });
-const cors = require("cors")
 
 let users: any = {}
 const PORT = 8080
