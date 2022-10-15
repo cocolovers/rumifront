@@ -1,7 +1,7 @@
 <script lang='ts'>
 	import { Avatar, Divider, Dropdown, Group, Menubar, MenuList } from '@codeunic/svelte-ui';
 	import type { IMenuItem } from '@codeunic/svelte-ui/interfaces/IMenuItem';
-	import { menuNavbar } from '../routes';
+	import { menuNavbar } from '../config/routes';
 	import { authStore } from '$lib/store/auth';
 	import imageAvatar from '$lib/assets/avatar.jpeg';
 

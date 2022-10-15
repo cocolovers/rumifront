@@ -3,7 +3,7 @@ import type {IAuth} from "../interfaces/IAuth";
 import type {IUser} from "../interfaces/IUser";
 import {auth} from "../mappers/auth";
 import {goto} from '$app/navigation'
-import {redirectToApp} from "../routes";
+import {redirectToApp} from "../config/routes";
 import {config} from "../config/config";
 
 export const authStore = writable<IAuth>()

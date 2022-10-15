@@ -1,7 +1,7 @@
 <script lang='ts'>
 	import { Card, MenuList } from '@codeunic/svelte-ui';
 	import type { IMenuItem } from '@codeunic/svelte-ui/interfaces/IMenuItem';
-	import { menuHome } from '$lib/routes';
+	import { menuHome } from '../config/routes';
 
 	const items: IMenuItem[] = menuHome;
 </script>

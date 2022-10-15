@@ -1,7 +1,7 @@
 import {authStore} from "../../lib/store/auth";
 import {get} from "svelte/store";
 import {redirect} from "@sveltejs/kit";
-import {redirectToLogin} from "../../lib/routes";
+import {redirectToLogin} from "../../lib/config/routes";
 import {config} from "$lib/config/config";
 
 export let ssr = false;
