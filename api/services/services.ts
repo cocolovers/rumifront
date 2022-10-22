@@ -1,5 +1,5 @@
-import { Log } from './Log';
+import {Log} from './Log';
 
 export const services = {
-	log: new Log()
+    log: new Log()
 };

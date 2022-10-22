@@ -1,6 +1,6 @@
 import {Ilog} from '../interfaces/services/ILog';
 import {ServiceBase} from './ServiceBase';
-import {getDateNow} from "../Utils/Date";
+import {getDateNow} from "../utils/Date";
 
 export class Log extends ServiceBase implements Ilog {
 
