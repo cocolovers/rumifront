@@ -1,52 +1,32 @@
-import { IUser } from '../front/src/lib/interfaces/IUser';
 import express from 'express';
 import cors from 'cors';
-import { createServer } from 'http';
-import { Server } from 'socket.io';
+import {createServer} from 'http';
+import {Server, Socket} from 'socket.io';
+import {services} from './services/services';
+import config from './config.json';
+import {IoCommandEnum} from './enums/IoCommandEnum';
+import {MessageEnum} from './enums/MessageEnum';
+import {TagEnum} from './enums/TagEnum';
+import {ServerCommandRegister} from "./events/ServerCommandRegister";
 
 const httpServer = createServer();
 const app = express();
 const io = new Server(httpServer, {
-	cors: {
-		origin: '*',
-		methods: ['GET', 'POST']
-	}
+    cors: config.cors
 });
-const users: any = {};
-const PORT = 8080;
+const PORT = config.port;
 app.use(cors());
 
-io.on('connection', function (socket: any) {
-	console.log('Socket connected');
-	// socket.join("room-" + roomno);
-	//Send this event to everyone in the room.
-	// io.sockets.in("room-" + roomno).emit('connectToRoom', "You are in room no. " + roomno);
-	socket.on('user:connect', (data: IUser, response: any) => {
-		const { name, id } = data;
+io.on(IoCommandEnum.CONNECTION, (socket: Socket) => {
+    services.log.info(TagEnum.App, `${MessageEnum.SOCKET_CONNECTED} - ${socket.id} `);
 
-		if (name in users) {
-			response(true, 'El usuario ya existe');
-			return;
-		}
+    new ServerCommandRegister(socket);
 
-		socket.user = { name, id };
-
-		users[name] = {
-			socket,
-			...socket.user
-		};
-
-		response(false, data);
-	});
-
-	socket.on('disconnect', (reason: string) => {
-		if (reason === 'io server disconnect') {
-			socket.connect();
-		}
-		delete users?.[socket?.user?.name];
-	});
+    // socket.join("room-" + roomno);
+    //Send this event to everyone in the room.
+    // io.sockets.in("room-" + roomno).emit('connectToRoom', "You are in room no. " + roomno);
 });
 
-httpServer.listen(PORT, function () {
-	console.log(`listening on localhost:${PORT}`);
+httpServer.listen(PORT, () => {
+    services.log.info(TagEnum.App, `${MessageEnum.CONNECTED_AND_LISTENING_PORT} ${PORT}`);
 });
