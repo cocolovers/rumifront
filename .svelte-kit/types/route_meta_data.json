@@ -1,0 +1,10 @@
+{
+	"": [],
+	"game": [
+		"src/routes/game/+layout.ts",
+		"src/routes/game/+layout.ts"
+	],
+	"game/settings": [
+		"src/routes/game/+layout.ts"
+	]
+}
