@@ -1,19 +1,22 @@
 import type { UseCreateGame } from '../interfaces/hooks/UseCreateGame';
-import repository from '../config/repository';
 import { goto } from '$app/navigation';
+import { useLog } from './useLog';
+import { ECreateGame } from '../enum/game/create';
 
 export const useCreateGame: UseCreateGame = () => {
+	const { log } = useLog();
+
 	const joinGame = () => {
-		repository.logs.log('JOIN GAME');
+		log(ECreateGame.JOIN_GAME, 'JOIN GAME');
 	};
 
 	const createGame = () => {
 		goto('/game/asashzxzodasd87238mzx<z');
-		repository.logs.log('CREATE GAME');
+		log(ECreateGame.CREATE_GAME, 'CREATE GAME');
 	};
 
 	const restartGame = () => {
-		repository.logs.log('RESTART GAME');
+		log(ECreateGame.RESTART_GAME, 'RESTART GAME');
 	};
 
 	return {

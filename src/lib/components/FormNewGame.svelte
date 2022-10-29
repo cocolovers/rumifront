@@ -1,8 +1,11 @@
 <script lang='ts'>
-	import { Button, Checkbox, enhance, FormGroup, Input } from '@codeunic/svelte-ui';
+	import { Button, Checkbox, enhance, FormGroup, Input, InputPassword } from '@codeunic/svelte-ui';
 	import { createEventDispatcher } from 'svelte';
-	import repository from '$lib/config/repository';
 	import { routesApi } from '$lib/config/routesApi';
+	import { useLog } from '../hooks/useLog';
+	import { ECreateGame } from '$lib/enum/game/create.js';
+
+	const { log } = useLog();
 
 	const dispatch = createEventDispatcher();
 	export let loading = false;
@@ -16,12 +19,11 @@
     pending:() => loading = true,
     error:(e) => {
 			loading = false;
-			console.log("ERROR");
-			repository.logs.error(e)
+			log(ECreateGame.ERROR_CREATE_GAME, e)
     },
     result: (data) => {
 			loading = false;
-			repository.logs.log(data)
+			log(ECreateGame.RESULT_CREATE_GAME, data)
 			dispatch("submit", data)
     }
   }}
@@ -33,10 +35,9 @@
 		/>
 	</FormGroup>
 	<FormGroup label='Password'>
-		<Input
+		<InputPassword
 			placeholder='Password'
 			name='password'
-			type='password'
 		/>
 	</FormGroup>
 	<FormGroup label='Players'>

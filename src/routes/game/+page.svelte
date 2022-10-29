@@ -7,6 +7,6 @@
 	<title>Game</title>
 </svelte:head>
 
-<Page>
+<Page image='/background.jpg'>
 	<MenuHome />
 </Page>
