@@ -4,6 +4,7 @@
 	import { auth } from '$lib/mappers/auth';
 	import { io } from '$lib/functions/webSocketConnection';
 	import { useAuth } from '$lib/store/auth';
+	import { EUser } from '$lib/enum/socket/user';
 
 	const { register } = useAuth();
 	let messageError;
@@ -11,7 +12,7 @@
 
 	const onSubmit = ({ detail }) => {
 		messageError = false;
-		io.emit('user:connect', auth(detail), (err, message) => {
+		io.emit(EUser.USER_CONNECT, auth(detail), (err, message) => {
 			if (err) {
 				messageError = message;
 				return;
