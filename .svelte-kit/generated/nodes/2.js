@@ -1,3 +1,3 @@
-import * as shared from "../../../src/routes/game/+layout.ts";
+import * as shared from "..\\..\\..\\src\\routes\\game\\+layout.ts";
 export { shared };
-export { default as component } from "../../../src/routes/game/+layout.svelte";
+export { default as component } from "..\\..\\..\\src\\routes\\game\\+layout.svelte";

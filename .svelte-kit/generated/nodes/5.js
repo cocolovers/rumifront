@@ -1,1 +1,1 @@
-export { default as component } from "../../../src/routes/game/settings/+page.svelte";
+export { default as component } from "..\\..\\..\\src\\routes\\game\\join\\+page.svelte";

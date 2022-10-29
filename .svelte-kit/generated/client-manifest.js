@@ -5,14 +5,20 @@ export { matchers } from './client-matchers.js';
 	() => import('./nodes/2'),
 	() => import('./nodes/3'),
 	() => import('./nodes/4'),
-	() => import('./nodes/5')];
+	() => import('./nodes/5'),
+	() => import('./nodes/6'),
+	() => import('./nodes/7'),
+	() => import('./nodes/8')];
 
 			export const server_loads = [];
 
 			export const dictionary = {
-	"": [3],
-	"game": [4,[2]],
-	"game/settings": [5,[2]]
+	"/": [3],
+	"/game": [4,[2]],
+	"/game/join": [5,[2]],
+	"/game/new": [6,[2]],
+	"/game/settings": [7,[2]],
+	"/game/[game]": [8,[2]]
 };
 
 			export const hooks = {
