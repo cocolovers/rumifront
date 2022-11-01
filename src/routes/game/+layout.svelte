@@ -1,6 +1,11 @@
 <script>
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import { authStore } from '$lib/store/auth';
+
+	export let data;
+
+	$: $authStore = data.session;
 </script>
 
 <Navbar />

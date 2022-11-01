@@ -10,7 +10,7 @@ export { matchers } from './client-matchers.js';
 	() => import('./nodes/7'),
 	() => import('./nodes/8')];
 
-			export const server_loads = [];
+			export const server_loads = [2];
 
 			export const dictionary = {
 	"/": [3],

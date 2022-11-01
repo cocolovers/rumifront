@@ -2,8 +2,21 @@
 // for information about these interfaces
 // and what to do when importing types
 declare namespace App {
-	// interface Locals {}
+	interface Locals {
+		session: Session;
+	}
+
 	// interface PageData {}
-	// interface Error {}
+
 	// interface Platform {}
 }
+
+type User = {
+	name: string;
+};
+
+type Session = {
+	str: string;
+	url: string;
+	user?: User;
+};

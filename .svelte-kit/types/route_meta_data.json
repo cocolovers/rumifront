@@ -13,18 +13,24 @@
 	],
 	"/game": [
 		"src/routes/game/+layout.ts",
-		"src/routes/game/+layout.ts"
+		"src/routes/game/+layout.server.ts",
+		"src/routes/game/+layout.ts",
+		"src/routes/game/+layout.server.ts"
 	],
 	"/game/join": [
-		"src/routes/game/+layout.ts"
+		"src/routes/game/+layout.ts",
+		"src/routes/game/+layout.server.ts"
 	],
 	"/game/new": [
-		"src/routes/game/+layout.ts"
+		"src/routes/game/+layout.ts",
+		"src/routes/game/+layout.server.ts"
 	],
 	"/game/settings": [
-		"src/routes/game/+layout.ts"
+		"src/routes/game/+layout.ts",
+		"src/routes/game/+layout.server.ts"
 	],
 	"/game/[game]": [
-		"src/routes/game/+layout.ts"
+		"src/routes/game/+layout.ts",
+		"src/routes/game/+layout.server.ts"
 	]
 }
